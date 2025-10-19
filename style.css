@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://www.shutterstock.com/image-vector/seamless-pattern-dentistry-set-icons-600nw-2399253121.jpg");
+    height: 140vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    
+}
+
+h1{
+   
+    color: #333;
+    text-align: center;
+    justify-content: center;
+    margin-top: -250px;
+}
+
+h2{
+   
+    color: #333;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+form{
+    background: #84b5ed;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+
+input, select, textarea, button {
+  border-radius: 8px; 
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 12px;
+  width: 100%;
+  font-size: 15px;
+}

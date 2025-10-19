@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "1xx6ohU7dWL6OUfRT",
+      });
+   })();
+</script>
+<script src="mein.js"></script>
+</head>
+<body>
+    <section>
+         <h1>solicite su cita!</h1>
+    <form action="/agendar-cita" method="POST">
+      
+    
+    <h2>Agendar Cita</h2>
+
+  <input type="text" name="nombre" placeholder="Nombre completo" required>
+
+  <input type="email" name="email" placeholder="Correo electrónico" required>
+
+  <input type="tel" name="telefono" placeholder="Número de teléfono" required>
+
+  <select name="tipo de paciente" id="tipo de paciente" required>
+    <option value="">Tipo de paciente</option>
+    <option value="Privado">Privado</option>
+    <option value="asegurado">asegurado</option>
+    <option value="turista de salud">turista de salud</option>
+    </select>
+
+<select name="horario" id="horario">
+    <option value="">Seleccione un horario</option>
+    <option value="Manana">Manana </option>
+    <option value="Tarde">Tarde</option>
+  </select>
+
+  <select name="motivo" required>
+    <option value="">Motivo de la cita</option>
+    <option value="consulta">Consulta</option>
+    <option value="seguimiento">Seguimiento</option>
+    <option value="evaluacion">Evaluación</option>
+    <option value="otro">Otro</option>
+  </select>
+
+  <textarea name="comentarios" rows="4" placeholder="Comentarios adicionales"></textarea>
+  <input type="checkbox" name="confirmacion" required> Confirmo que los datos son correctos 
+
+  <button type="submit">Agendar</button>
+</form>
+
+
+    </section>
+</body>
+</html>
